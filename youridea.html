@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valve Corporation-спонсирование Вашей идеи</title>
+    <style>
+        .logo {
+        text-align: center;
+       }
+       body{
+           font-family: Arial;
+           background-image: url(images/Steambg2.jpg);
+           background-size: cover;
+           background-position: center;
+           color: white;
+       }
+       .active {
+           font-weight: bold;
+       }
+       .back{
+           font-size: 200%;
+       }
+   </style>
+</head>
+<body>
+    <p class="logo"><img src="images/valve logo.png"></p>
+     <nav> <!-- Задания по единой навигационной части-->
+        <a href="Web.html" id="top">Главная</a>
+        <a href="Web.html"> <img src="images/valve logo.png"></a>
+        <a href="Task solving.html">Алгоритмическая задача</a>
+        <a href="dom.html">DOM_JS. Считываем информацию из DOM</a>
+        <a href="Click task.html">Изменяем кириллицу на латиницу по клику</a>
+        <a href="https://electives.hse.ru/minor_programming_spb/" target="_blank">Внешний сайт</a>
+        <a href="Form.html">Форма по алгоритмической задаче</a>
+    </nav>
+    <p>Разделы сайта:</p>
+    <top-nav class="section">  <!-- Задания на разделы-->
+        <a href="gameprojectsValve.html">Игровые проекты</a>
+        <a href="team.html">Связь с командой</a>
+        <a href="youridea.html" class="active">Спонсировать Вашу идею</a>
+    </top-nav>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <p>Для поисковика:<input type="hidden"  name="q" value="search"></p>
+
+            <label for="Secondname">Фамилия:</label>
+            <input type="text" id="Secondname" name="Secondname" required><br><br>
+
+            <label for="Firstname">Имя:</label>
+            <input type="text" id="Firstname" name="Firstname" required><br><br>
+
+            <label for="Steam-nickname">Никнейм в Steam:</label>
+            <input type="text" id="Steam-nickname" name="Steam-nickname" required><br><br>
+
+            <label for="release">Год релиза Вашей игры:</label>
+            <input type="number" id="release" name="release" required><br><br>
+            
+            <label for="steam">Вы планируете выпустить проект на платформе Steam?:</label><br>
+            <input type="radio" id="steam" name="steam" value="Да" >Да<br>
+            <input type="radio" id="steam" name="steam" value="Нет" >Нет<br><br>
+
+            <label for="genre">Вы планируете выпустить проект на платформе Steam?:</label><br>
+            <input type="checkbox" id="genre" name="genre" value="Аркада"  >Аркада<br>
+            <input type="checkbox" id="genre" name="genre" value="Глобальные стратегии">Глобальные стратегии<br>
+            <input type="checkbox" id="genre" name="genre" value="Стратегии">Стратегии<br>
+            <input type="checkbox" id="genre" name="genre" value="Интерактивное кино или игры Full Motion Video (FMV)">Интерактивное кино или игры Full Motion Video (FMV)<br>
+            <input type="checkbox" id="genre" name="genre" value="Шутер">Шутер<br>
+            <input type="checkbox" id="genre" name="genre" value="Хоррор">Хоррор<br>
+            <input type="checkbox" id="genre" name="genre" value="Action">Action<br>
+            <input type="checkbox" id="genre" name="genre" value="Симулятор">Симулятор<br>
+            <input type="checkbox" id="genre" name="genre" value="Файтинг">Файтинг<br>
+            <input type="checkbox" id="genre" name="genre" value="Визуальный роман">Визуальный роман<br>
+            <input type="checkbox" id="genre" name="genre" value="Wargames">Wargames<br>
+            <input type="checkbox" id="genre" name="genre" value="Тактические игры">Тактические игры<br>
+            <input type="checkbox" id="genre" name="genre" value="Квест">Квест<br>
+            <input type="checkbox" id="genre" name="genre" value="Puzzle-квесты">Puzzle-квесты<br>
+            <input type="checkbox" id="genre" name="genre" value="Ролевые игры (RPG)">Ролевые игры (RPG)<br><br>
+
+            <label for="Form-password">Пароль для редактирования запроса:</label>
+            <input type="password" id="Form-password" name="Form-password" required><br><br>
+
+            <label for="date">Дата отправки запроса на спонсирование:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <input type="submit" name="Submit" value="Отправить сообщение">
+            <input type="reset"  name="Reset"  value="Обновить">
+        </ul>
+    </form>
+    <p align="center"><a href="#top" target="_self" class="back">К началу формы</a></p>
+</body>
+</html>
